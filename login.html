@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="images/logo1.png" alt="lamotdoslogo" class="lamotdoslogo" />
+      <h1>BARANGAY LAMOT 2 COMMITTE REPORT</h1>
+      <img src="images/logo2.png" alt="lamotdoslogo" class="lamotdoslogo" />
+    </div>
+    <div class="form_container">
+      <h1>Login</h1>
+      <form method="" action=""></form>
+      <div class="input_group">
+        <input type="text" placeholder="Username" required name="username" />
+        <input
+          type="password"
+          placeholder="Password"
+          required
+          id="password"
+          name="password"
+        />
+        <img
+          class="password_icon"
+          src="images/hide.png"
+          alt="hide"
+          id="password_icon"
+        />
+      </div>
+      <a href="dashboard.html" class="but_login"
+        ><button class="login_but">LOGIN</button></a
+      >
+      <div class="back_but">
+        <a href="home.html" class="back_icon"> < </a>
+        <a href="home.html" class="back_placeholder">
+          <p>Back</p>
+        </a>
+      </div>
+    </div>
+    <script>
+      let password_icon = document.getElementById("password_icon");
+      let password = document.getElementById("password");
+
+      password_icon.onclick = function () {
+        if (password.type == "password") {
+          password.type = "text";
+          password_icon.src = "/images/unhide.png";
+        } else {
+          password.type = "password";
+          password_icon.src = "/images/hide.png";
+        }
+      };
+    </script>
+  </body>
+</html>

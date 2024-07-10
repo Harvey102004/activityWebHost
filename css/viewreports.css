@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+:root {
+    --primary-color: #ff7d29;
+    --secondary-color: #333a73;
+    --font-family: "Poppins", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    background-color: var(--primary-color);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    width: 20%;
+}
+.lamotdoslogo {
+    height: 5rem;
+    width: 8rem;
+}
+
+.reports_dropdowns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.6rem;
+    width: 70%;
+}
+
+.nosbm {
+    margin-left: 30px;
+}
+
+.nosbm, .months, .years{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+#Name_of_SBM, #monthSelect, #yearSelect {
+    padding: 5px;
+    border: 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.17);
+    box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.17);
+}
+
+#Name_of_SBM {
+    margin-left: -20px;
+    width: 450px;
+    height: 35px;
+}
+
+#monthSelect {
+    margin-left: -20px;
+    height: 35px;
+    width: 120px;
+}
+
+#yearSelect {
+   margin-left: -20px;
+   height: 35px;
+   width: 100px ;
+}
+
+#Name_of_SBM:focus, #monthSelect:focus, #yearSelect:focus{
+    outline: none;
+    border: 1px solid var(--secondary-color);
+}
+
+.reports_container {
+    height: 500px;
+    width: 60%;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.reports_container h4 {
+    margin: 15px 20px;
+    font-weight: 600;
+}
+
+.report_table_container {
+    height: 400px;
+    width: 98%;
+}
+
+.table_header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.table_header p {
+    font-weight: 600;
+}
+
+.date {
+    margin:  22px;
+}
+
+.aaa {
+    margin: 0 150px;
+}
+
+.reports_table {
+    height: 350px;
+    width: 100%;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    overflow-x: auto;
+}
+
+.reports_table::-webkit-scrollbar {
+    width: 8px;
+}
+
+.reports_table::-webkit-scrollbar-track {
+    background: #f2f2f2; 
+}
+
+.reports_table::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); 
+    border-radius: 50px; 
+}
+
+.table_reports {
+    width: 98%;
+    border-collapse: collapse;
+}
+
+.table_reports a {
+    text-decoration: none;
+    color: #030303;
+}
+
+.table_reports tr td  {
+    font-size: 12px;
+    color: #030303;
+    padding: 20px 15px;
+    text-align: left;
+}
+
+.table_reports tr:nth-child(odd) {
+    background-color: #f2f2f2; 
+}
+
+.back_button {
+    position: absolute;
+    top: 650px;
+    left: 70px;
+    height: 30px;
+    width: 100px;
+
+}
+
+.back_button {
+    display: flex;
+    align-items: center;
+}
+
+.back_but {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.back_placeholder {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+

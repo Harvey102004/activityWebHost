@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+:root {
+    --primary-color: #ff7d29;
+    --secondary-color: #333a73;
+    --font-family: "Poppins", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    height: 18rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: -1000;
+}
+
+.header_logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 280px;
+    width: 95%;
+    margin: auto;
+}
+
+.admin_logo {
+    height: 8rem;
+    width: 200px;
+}
+
+.admin_logo img {
+    height: 5rem;
+    margin-left: 45px;
+    margin-top: 60px;
+}
+
+.admin_logo p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 5px;
+}
+
+.logout_logo {
+   display: flex;
+   justify-content: space-between;
+   height: 2rem;
+   width: 100px;
+   margin-bottom: 210px;
+}
+
+.logout_logo img {
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.logout_logo p {
+    color: #fff;
+    cursor: pointer;
+}
+
+.announcements_container {
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    height: 600px;
+    width: 65%;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 20px;
+    padding: 0 4rem;
+}
+
+.announcements_container h1 {
+    text-align: center;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.announcement_form_container {
+    position: relative;
+    height: 400px;
+    width: 95%;
+    margin: auto;
+}
+
+.input_announcement {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.input_announcement label {
+    display: block;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+#input_date {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 0.8rem;
+}
+
+.input_announcement input, .input_announcement textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+}
+
+.input_announcement input:focus, .input_announcement textarea:focus {
+    outline: none;
+}
+
+.announcement_photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 400px;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.photo_announcements_container {
+    height: 300px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 1px solid var(--secondary-color);
+}
+
+.announcement_photo button {
+    display: block;
+    padding: 10px;
+    width: 150px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: #fff;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+    
+}
+
+.announcement_photo button:hover {
+    color: #fff;
+    background-color: var(--secondary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.announcements_submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 60%;
+    margin-top: 30px;
+}
+
+.back {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 2rem;
+    width: 100px;
+}
+
+.back .back_but {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.back_placeholder2 {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.upload_photos {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+    width: 170px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+}
+
+.upload_photos:hover {
+    background-color: #fff;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    transition: background-color 0.3s ease, 0.3s ease;
+}
+
+.logout_logo a {
+    text-decoration: none;
+}
+
+
+
+

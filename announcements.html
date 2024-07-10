@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Announcements</title>
+    <link rel="stylesheet" href="css/announcements.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header_logos">
+        <div class="admin_logo">
+          <img class="icon1" src="images/admin.png" alt="admin_logo" />
+          <p class="admin_text">administrator</p>
+        </div>
+        <div class="logout_logo">
+          <a href="home.html"><p class="logout_text">LOGOUT</p></a>
+          <a href="home.html"
+            ><img class="icon2" src="images/logout.png" alt="logout"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="announcements_container">
+      <h1>Announcements</h1>
+      <form action="">
+        <div class="announcement_form_container">
+          <div class="input_announcement">
+            <label for="title_input">Title :</label>
+            <input
+              type="text"
+              id="title_input"
+              required
+              placeholder="Input title"
+            />
+            <label for="description_input">Description :</label>
+            <textarea
+              name=""
+              id="description_input"
+              placeholder="Input Description"
+            ></textarea>
+            <label for="location_input">Location :</label>
+            <input
+              type="text"
+              required
+              id="location_input"
+              placeholder="Input location"
+            />
+            <label for="input_date">Date :</label>
+            <input type="date" required id="input_date" />
+          </div>
+          <div class="announcement_photo">
+            <div class="photo_announcements_container"></div>
+            <button>Upload</button>
+          </div>
+        </div>
+        <div class="announcements_submit">
+          <div class="back">
+            <a href="dashboard.html" class="back_but"><</a>
+            <a href="dashboard.html" class="back_placeholder2"><p>Back</p></a>
+          </div>
+          <button class="upload_photos">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
