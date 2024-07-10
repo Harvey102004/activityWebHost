@@ -122,7 +122,8 @@ a:hover::after {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom 14% center;
-    background-image: url('/images/homepage_bg.jpg');
+    background-image: url('./images/homepage_bg.jpg');
+    
 }
 
 .background_homepage h1 {
